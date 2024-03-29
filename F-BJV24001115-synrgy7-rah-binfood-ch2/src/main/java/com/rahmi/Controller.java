@@ -31,6 +31,9 @@ public class Controller {
                 case 99:
                     confirmOrder();
                     break;
+                case 98:
+                    removeOrder();
+                    break;
                 default:
                     if (choice > 0 && choice <= menuService.getMenuList().size()) {
                         System.out.print("Quantity: ");
@@ -58,6 +61,7 @@ public class Controller {
 
         System.out.println("----------------------------");
         System.out.println("99. Place Order & Pay");
+        System.out.println("98. Remove Order");
         System.out.println("0.  Exit the application\n");
         System.out.print("=> ");
     }
@@ -77,6 +81,13 @@ public class Controller {
         if (!found) {
             orderService.addOrder(menu, quantity);
         }
+    }
+
+    private void removeOrder() {
+        System.out.println("Enter the order number to remove:");
+        int orderNumber = scanner.nextInt();
+        orderService.removeOrder(orderNumber);
+        System.out.println("Order removed successfully.");
     }
 
     private void confirmOrder() {

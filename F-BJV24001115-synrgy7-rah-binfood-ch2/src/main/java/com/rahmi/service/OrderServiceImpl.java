@@ -18,6 +18,15 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public void removeOrder(int orderNumber) {
+        if (orderNumber >= 0 && orderNumber < orderList.size()) {
+            orderList.remove(orderNumber);
+        } else {
+            System.out.println("Invalid order number.");
+        }
+    }
+
+    @Override
     public List<OrderItem> getOrderList() {
         return orderList;
     }
