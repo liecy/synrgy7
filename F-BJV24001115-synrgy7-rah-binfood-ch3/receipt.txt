@@ -1,0 +1,20 @@
+===============================
+            BinarFud            
+===============================
+
+2024-03-29 23:56:46
+Thank you for order in
+BinarFud
+
+Below are your orders:
+
+Nasi Goreng	2	30000
+------------------------------+
+Total		2	30000
+
+Payment : BinarCash
+
+===============================
+Save this receipt as proof of
+payment
+===============================
