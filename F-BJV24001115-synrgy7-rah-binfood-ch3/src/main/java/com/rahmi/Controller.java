@@ -7,11 +7,7 @@ import com.rahmi.service.OrderService;
 import com.rahmi.view.OrderView;
 import lombok.AllArgsConstructor;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 
 @AllArgsConstructor
@@ -50,16 +46,14 @@ public class Controller {
     private void placeOrder(int index, int quantity) {
         MenuItem menu = menuService.getMenuList().get(index);
 
-        boolean found = false;
-        for (OrderItem orderItem : orderService.getOrderList()) {
-            if (orderItem.getMenuItem().equals(menu)) {
-                orderItem.setQuantity(orderItem.getQuantity() + quantity);
-                found = true;
-                break;
-            }
-        }
+        Optional<OrderItem> existingOrder = orderService.getOrderList().stream()
+                .filter(orderItem -> orderItem.getMenuItem().equals(menu))
+                .findFirst();
 
-        if (!found) {
+        if (existingOrder.isPresent()) {
+            OrderItem orderItem = existingOrder.get();
+            orderItem.setQuantity(orderItem.getQuantity() + quantity);
+        } else {
             orderService.addOrder(menu, quantity);
         }
     }
@@ -67,7 +61,12 @@ public class Controller {
     private void removeOrder() {
         System.out.println("Enter the order number to remove:");
         int orderNumber = scanner.nextInt();
-        orderService.removeOrder(orderNumber);
-        System.out.println("Order removed successfully.");
+        orderService.getOrderList().stream()
+                .filter(orderItem -> orderItem.getMenuItem().equals(menuService.getMenuList().get(orderNumber)))
+                .findFirst()
+                .ifPresentOrElse(orderItem -> {
+                    orderService.removeOrder(orderNumber);
+                    System.out.println("Order removed successfully.");
+                }, () -> System.out.println("Order not found."));
     }
 }
