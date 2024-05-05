@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.UUID;
 
@@ -42,6 +42,7 @@ public class MerchantServiceImpl implements MerchantService {
 
     @Override
     public MerchantDTO updateMerchant(UUID id, MerchantDTO merchantDTO) {
+        logger.debug("Updating merchant with id: {}", id);
         Merchant existingMerchant = merchantRepository.findById(id)
                 .orElseThrow(() -> new MerchantNotFoundException("Merchant not found with id: " + id));
 
@@ -52,6 +53,7 @@ public class MerchantServiceImpl implements MerchantService {
 
     @Override
     public void toggleMerchantStatus(UUID id) {
+        logger.debug("Toggling status for merchant with id: {}", id);
         Merchant merchant = merchantRepository.findById(id)
                 .orElseThrow(() -> new MerchantNotFoundException("Merchant not found with id: " + id));
         merchant.setOpen(!merchant.getOpen());
@@ -60,13 +62,14 @@ public class MerchantServiceImpl implements MerchantService {
 
     @Override
     public List<MerchantDTO> getAllOpenMerchants() {
+        logger.debug("Fetching all open merchants");
         List<Merchant> openMerchants = merchantRepository.findByOpen(true);
-
         return merchantMapper.toDTOList(openMerchants);
     }
 
     @Override
     public Page<MerchantDTO> getAllMerchants(Pageable pageable) {
+        logger.debug("Fetching all merchants with pagination");
         Page<Merchant> merchantPage = merchantRepository.findAll(pageable);
         return merchantPage.map(merchantMapper::toDTO);
     }

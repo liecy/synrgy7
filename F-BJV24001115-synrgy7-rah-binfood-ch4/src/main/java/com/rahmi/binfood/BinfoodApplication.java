@@ -13,5 +13,4 @@ public class BinfoodApplication {
 		SpringApplication.run(BinfoodApplication.class, args);
 //		System.out.println("Hello World!");
 	}
-
 }

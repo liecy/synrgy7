@@ -23,8 +23,6 @@ public class Product extends BaseModel{
 
     private Double price;
 
-    private Boolean open;
-
     @ManyToOne(targetEntity = Merchant.class)
     @JoinColumn(name = "id_merchant")
     private Merchant merchant;
