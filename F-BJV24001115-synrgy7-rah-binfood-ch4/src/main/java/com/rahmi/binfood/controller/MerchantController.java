@@ -33,7 +33,7 @@ public class MerchantController {
         return new ResponseEntity<>(newMerchantDTO, HttpStatus.CREATED);
     }
 
-    @PutMapping("/update/{id}") // Tambahkan path variable id
+    @PutMapping("/update/{id}")
     public ResponseEntity<MerchantDTO> updateMerchant(@PathVariable UUID id, @RequestBody MerchantDTO merchantDTO) {
         MerchantDTO updatedMerchantDTO = merchantService.updateMerchant(id, merchantDTO);
         return new ResponseEntity<>(updatedMerchantDTO, HttpStatus.OK);

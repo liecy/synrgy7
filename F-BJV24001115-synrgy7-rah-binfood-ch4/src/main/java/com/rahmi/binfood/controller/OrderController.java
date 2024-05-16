@@ -1,5 +1,6 @@
 package com.rahmi.binfood.controller;
 
+import com.rahmi.binfood.dto.OrderDTO;
 import com.rahmi.binfood.model.Order;
 import com.rahmi.binfood.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,17 +21,17 @@ public class OrderController {
     }
 
     @PostMapping
-    public Order createOrder(@RequestBody Order order) {
-        return orderService.createOrder(order);
+    public OrderDTO createOrder(@RequestBody OrderDTO orderDTO) {
+        return orderService.createOrder(orderDTO);
     }
 
     @GetMapping("/user/{userId}")
-    public List<Order> getOrdersByUserId(@PathVariable UUID userId) {
+    public List<OrderDTO> getOrdersByUserId(@PathVariable UUID userId) {
         return orderService.getOrdersByUserId(userId);
     }
 
     @GetMapping
-    public List<Order> getAllOrders() {
+    public List<OrderDTO> getAllOrders() {
         return orderService.getAllOrders();
     }
 }

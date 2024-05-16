@@ -1,6 +1,8 @@
 package com.rahmi.binfood.service;
 
+import com.rahmi.binfood.dto.UserDTO;
 import com.rahmi.binfood.exception.UserNotFoundException;
+import com.rahmi.binfood.mapper.UserMapper;
 import com.rahmi.binfood.model.User;
 import com.rahmi.binfood.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,37 +15,39 @@ import java.util.UUID;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+    private final UserMapper userMapper;
 
     @Autowired
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepository userRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
+        this.userMapper = userMapper;
     }
 
     @Override
-    public User addUser(User user) {
-        // logika validasi / pemrosesan tambahan sebelum menyimpan user
-        return userRepository.save(user);
+    public UserDTO addUser(UserDTO userDTO) {
+        User user = userMapper.toEntity(userDTO);
+        User savedUser = userRepository.save(user);
+        return userMapper.toDTO(savedUser);
     }
 
     @Override
-    public User updateUser(User user) {
-        // mastiin user yang diupdate udah ada di database
-        return userRepository.save(user);
+    public UserDTO updateUser(UUID id, UserDTO userDTO) {
+        User existingUser = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException("User not found with id: " + id));
+        userMapper.updateFromDTO(userDTO, existingUser);
+        User updatedUser = userRepository.save(existingUser);
+        return userMapper.toDTO(updatedUser);
     }
 
     @Override
-    public void deleteUser(UUID userId) {
-        userRepository.deleteById(userId);
+    public UserDTO getUserById(UUID id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException("User not found with id: " + id));
+        return userMapper.toDTO(user);
     }
 
     @Override
-    public User getUserById(UUID userId) {
-        return userRepository.findById(userId)
-                .orElseThrow(() -> new UserNotFoundException("User not found with id: " + userId));
-    }
-
-    @Override
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
+    public void deleteUser(UUID id) {
+        userRepository.deleteById(id);
     }
 }

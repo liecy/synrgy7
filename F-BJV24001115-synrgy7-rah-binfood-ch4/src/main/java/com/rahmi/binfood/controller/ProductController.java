@@ -44,17 +44,17 @@ public class ProductController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-//    @GetMapping
-//    public ResponseEntity<Page<ProductDTO>> getAllProducts(Pageable pageable) {
-//        Page<ProductDTO> productsDTO = productService.getAllProducts(pageable);
-//        return new ResponseEntity<>(productsDTO, HttpStatus.OK);
-//    }
-
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<ProductDTO>> getAllProducts() {
-        List<ProductDTO> products = productService.getAllProducts();
-        return new ResponseEntity<>(products, HttpStatus.OK);
+        List<ProductDTO> productsDTO = productService.getAllProducts();
+        return new ResponseEntity<>(productsDTO, HttpStatus.OK);
     }
+
+//    @GetMapping("/all")
+//    public ResponseEntity<List<ProductDTO>> getAllProducts() {
+//        List<ProductDTO> products = productService.getAllProducts();
+//        return new ResponseEntity<>(products, HttpStatus.OK);
+//    }
 
     @GetMapping("/priceGreaterThan/{minPrice}")
     public ResponseEntity<List<ProductDTO>> findProductsByPriceGreaterThan(@PathVariable Double minPrice) {

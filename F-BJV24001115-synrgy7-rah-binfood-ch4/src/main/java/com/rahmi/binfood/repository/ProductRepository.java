@@ -19,7 +19,7 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
     @Query(value = "SELECT * FROM product WHERE price > :minPrice", nativeQuery = true)
     List<Product> findProductsByPriceGreaterThan(@Param("minPrice") Double minPrice);
 
-    @Procedure(name = "get_all_products")
-    List<Product> getAllProducts();
+//    @Procedure(procedureName = "public.get_all_products")
+//    List<Product> getAllProducts();
 
 }

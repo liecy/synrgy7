@@ -58,12 +58,11 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDTO> getAllProducts() {
-        List<Product> products = productRepository.getAllProducts();
+        List<Product> products = productRepository.findAll();
         return products.stream()
                 .map(productMapper::toDTO)
                 .collect(Collectors.toList());
     }
-
     @Override
     public List<ProductDTO> findProductsByPriceGreaterThan(Double minPrice) {
         List<Product> products = productRepository.findProductsByPriceGreaterThan(minPrice);
