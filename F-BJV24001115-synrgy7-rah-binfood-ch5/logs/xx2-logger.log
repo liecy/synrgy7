@@ -1,3 +1,1 @@
-2024-05-17 15:31:46,826 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-17 15:31:46,828 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-05-17 15:31:46,830 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2024-05-17 20:17:52,924 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-9] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Shojin': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
