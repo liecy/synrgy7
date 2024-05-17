@@ -1,0 +1,36 @@
+2024-05-15 00:32:15,827 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 00:32:15,830 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-15 00:32:15,834 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-15 15:54:53,466 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 42008 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4)
+2024-05-15 15:54:53,470 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-15 15:54:54,456 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 15:54:54,567 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 98 ms. Found 4 JPA repository interfaces.
+2024-05-15 15:54:55,346 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-15 15:54:55,369 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-15 15:54:55,373 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-15 15:54:55,374 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-15 15:54:55,489 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-15 15:54:55,492 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1925 ms
+2024-05-15 15:54:55,729 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 15:54:55,808 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-15 15:54:55,852 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-15 15:54:56,144 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-15 15:54:56,176 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-15 15:54:56,480 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18e4551
+2024-05-15 15:54:56,483 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-15 15:54:56,531 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-15 15:54:58,013 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-15 15:54:58,148 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 15:54:58,670 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-15 15:54:58,743 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 15:54:59,131 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-15 15:54:59,150 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-15 15:54:59,161 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 6.633 seconds (process running for 7.281)
+2024-05-15 15:55:03,780 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 15:55:03,780 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-05-15 15:55:03,784 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Completed initialization in 4 ms
+2024-05-15 16:01:57,971 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-05-15 16:15:10,107 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-4] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-05-15 16:18:38,288 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-8] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; UUID string too large]
+2024-05-15 16:23:12,224 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-9] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "bc33c7b0-b393-4f76-b91d-dfddcb782af": UUID has to be represented by standard 36-char representation]
+2024-05-15 16:23:54,977 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.UUID` from String "46da46f8-faac-4909-8a7f-e4bb187d288": UUID has to be represented by standard 36-char representation]
