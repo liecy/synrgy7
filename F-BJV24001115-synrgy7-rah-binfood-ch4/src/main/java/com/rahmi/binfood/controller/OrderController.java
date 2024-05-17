@@ -4,6 +4,8 @@ import com.rahmi.binfood.dto.OrderDTO;
 import com.rahmi.binfood.model.Order;
 import com.rahmi.binfood.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,17 +23,20 @@ public class OrderController {
     }
 
     @PostMapping
-    public OrderDTO createOrder(@RequestBody OrderDTO orderDTO) {
-        return orderService.createOrder(orderDTO);
+    public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
+        OrderDTO createdOrder = orderService.createOrder(orderDTO);
+        return new ResponseEntity<>(createdOrder, HttpStatus.CREATED);
     }
 
     @GetMapping("/user/{userId}")
-    public List<OrderDTO> getOrdersByUserId(@PathVariable UUID userId) {
-        return orderService.getOrdersByUserId(userId);
+    public ResponseEntity<List<OrderDTO>> getOrdersByUserId(@PathVariable UUID userId) {
+        List<OrderDTO> orders = orderService.getOrdersByUserId(userId);
+        return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
     @GetMapping
-    public List<OrderDTO> getAllOrders() {
-        return orderService.getAllOrders();
+    public ResponseEntity<List<OrderDTO>> getAllOrders() {
+        List<OrderDTO> orders = orderService.getAllOrders();
+        return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 }
