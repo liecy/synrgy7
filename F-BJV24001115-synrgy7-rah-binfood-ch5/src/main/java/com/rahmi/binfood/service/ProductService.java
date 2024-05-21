@@ -12,13 +12,9 @@ import java.util.UUID;
 
 public interface ProductService {
     ProductDTO addProduct(ProductDTO productDTO);
-
     ProductDTO updateProduct(UUID id, ProductDTO productDTO);
-
     void deleteProduct(UUID id);
-
-    //    Page<ProductDTO> getAllProducts(Pageable pageable);
     List<ProductDTO> getAllProducts();
-
     List<ProductDTO> findProductsByPriceGreaterThan(Double minPrice);
+    Product getProductById(UUID productId); // Add this method
 }

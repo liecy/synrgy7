@@ -15,4 +15,6 @@ public class OrderDetailDTO {
     private UUID productId;
     private Integer quantity;
     private Double totalPrice;
+    private String productName;
+    private Double price;
 }

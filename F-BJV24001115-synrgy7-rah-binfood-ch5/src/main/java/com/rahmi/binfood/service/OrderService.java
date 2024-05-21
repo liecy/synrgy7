@@ -16,4 +16,5 @@ public interface OrderService {
     OrderDTO createOrder(OrderDTO orderDTO);
     List<OrderDTO> getOrdersByUserId(UUID userId);
     List<OrderDTO> getAllOrders();
+    OrderDTO getOrderById(UUID orderId);
 }

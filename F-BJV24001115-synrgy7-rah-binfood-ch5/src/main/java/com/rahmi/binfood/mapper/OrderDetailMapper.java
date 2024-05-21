@@ -5,6 +5,7 @@ import com.rahmi.binfood.model.OrderDetail;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Component
 public class OrderDetailMapper {
@@ -22,11 +23,5 @@ public class OrderDetailMapper {
 
     public OrderDetail toEntity(OrderDetailDTO orderDetailDTO) {
         return modelMapper.map(orderDetailDTO, OrderDetail.class);
-    }
-
-    public void updateFromDto(OrderDetailDTO dto, OrderDetail entity) {
-        modelMapper.map(dto, entity);
-        // Pastikan untuk tidak menyalin ID dari DTO ke entity jika tidak perlu
-        entity.setId(entity.getId());
     }
 }

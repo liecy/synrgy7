@@ -2,9 +2,12 @@ package com.rahmi.binfood.service;
 
 import com.rahmi.binfood.dto.OrderDetailDTO;
 import com.rahmi.binfood.exception.OrderDetailNotFoundException;
+import com.rahmi.binfood.exception.ProductNotFoundException;
 import com.rahmi.binfood.mapper.OrderDetailMapper;
 import com.rahmi.binfood.model.OrderDetail;
+import com.rahmi.binfood.model.Product;
 import com.rahmi.binfood.repository.OrderDetailRepository;
+import com.rahmi.binfood.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,44 +20,28 @@ public class OrderDetailServiceImpl implements OrderDetailService {
 
     private final OrderDetailRepository orderDetailRepository;
     private final OrderDetailMapper orderDetailMapper;
+    private final ProductRepository productRepository;
 
     @Autowired
-    public OrderDetailServiceImpl(OrderDetailRepository orderDetailRepository, OrderDetailMapper orderDetailMapper) {
+    public OrderDetailServiceImpl(OrderDetailRepository orderDetailRepository, OrderDetailMapper orderDetailMapper, ProductRepository productRepository) {
         this.orderDetailRepository = orderDetailRepository;
         this.orderDetailMapper = orderDetailMapper;
+        this.productRepository = productRepository;
     }
 
     @Override
-    public OrderDetailDTO createOrderDetail(OrderDetailDTO orderDetailDTO) {
+    public OrderDetailDTO addOrderDetail(OrderDetailDTO orderDetailDTO) {
         OrderDetail orderDetail = orderDetailMapper.toEntity(orderDetailDTO);
+        Product product = productRepository.findById(orderDetailDTO.getProductId())
+                .orElseThrow(() -> new ProductNotFoundException("Product not found with id: " + orderDetailDTO.getProductId()));
+        orderDetail.setTotalPrice(product.getPrice() * orderDetailDTO.getQuantity());
         OrderDetail savedOrderDetail = orderDetailRepository.save(orderDetail);
         return orderDetailMapper.toDto(savedOrderDetail);
     }
 
     @Override
-    public OrderDetailDTO updateOrderDetail(UUID id, OrderDetailDTO orderDetailDTO) {
-        OrderDetail existingOrderDetail = orderDetailRepository.findById(id)
-                .orElseThrow(() -> new OrderDetailNotFoundException("OrderDetail not found with id: " + id));
-        orderDetailMapper.updateFromDto(orderDetailDTO, existingOrderDetail);
-        OrderDetail updatedOrderDetail = orderDetailRepository.save(existingOrderDetail);
-        return orderDetailMapper.toDto(updatedOrderDetail);
-    }
-
-    @Override
-    public OrderDetailDTO getOrderDetailById(UUID id) {
-        OrderDetail orderDetail = orderDetailRepository.findById(id)
-                .orElseThrow(() -> new OrderDetailNotFoundException("OrderDetail not found with id: " + id));
-        return orderDetailMapper.toDto(orderDetail);
-    }
-
-    @Override
-    public void deleteOrderDetail(UUID id) {
-        orderDetailRepository.deleteById(id);
-    }
-
-    @Override
-    public List<OrderDetailDTO> getAllOrderDetails() {
-        List<OrderDetail> orderDetails = orderDetailRepository.findAll();
+    public List<OrderDetailDTO> getOrderDetailsByOrderId(UUID orderId) {
+        List<OrderDetail> orderDetails = orderDetailRepository.findByOrderId(orderId);
         return orderDetails.stream()
                 .map(orderDetailMapper::toDto)
                 .collect(Collectors.toList());

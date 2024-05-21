@@ -5,8 +5,10 @@ import com.rahmi.binfood.dto.OrderDetailDTO;
 import com.rahmi.binfood.exception.UserNotFoundException;
 import com.rahmi.binfood.model.Order;
 import com.rahmi.binfood.model.OrderDetail;
+import com.rahmi.binfood.model.Product;
 import com.rahmi.binfood.model.User;
 import com.rahmi.binfood.repository.UserRepository;
+import com.rahmi.binfood.service.ProductService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -38,17 +40,22 @@ import java.util.stream.Collectors;
 public class OrderMapper {
 
     private final ModelMapper modelMapper;
+    private final ProductService productService;
 
     @Autowired
-    public OrderMapper(ModelMapper modelMapper) {
+    public OrderMapper(ModelMapper modelMapper, ProductService productService) {
         this.modelMapper = modelMapper;
+        this.productService = productService;
     }
 
     public OrderDTO toDto(Order order) {
         OrderDTO orderDTO = modelMapper.map(order, OrderDTO.class);
-        // Handle nested mapping for orderDetails
         List<OrderDetailDTO> orderDetailDTOs = order.getOrderDetail().stream()
-                .map(detail -> modelMapper.map(detail, OrderDetailDTO.class))
+                .map(detail -> {
+                    OrderDetailDTO detailDTO = modelMapper.map(detail, OrderDetailDTO.class);
+                    detailDTO.setOrderId(order.getId()); // Set orderId here
+                    return detailDTO;
+                })
                 .collect(Collectors.toList());
         orderDTO.setOrderDetails(orderDetailDTOs);
         return orderDTO;
@@ -56,21 +63,39 @@ public class OrderMapper {
 
     public Order toEntity(OrderDTO orderDTO) {
         Order order = modelMapper.map(orderDTO, Order.class);
-        // Handle nested mapping for orderDetails
         List<OrderDetail> orderDetails = orderDTO.getOrderDetails().stream()
-                .map(detailDTO -> modelMapper.map(detailDTO, OrderDetail.class))
+                .map(detailDTO -> {
+                    OrderDetail detail = modelMapper.map(detailDTO, OrderDetail.class);
+                    Product product = productService.getProductById(detailDTO.getProductId());
+                    detail.setTotalPrice(product.getPrice() * detailDTO.getQuantity());
+                    detail.setOrder(order); // Set the order in order detail
+                    return detail;
+                })
                 .collect(Collectors.toList());
         order.setOrderDetail(orderDetails);
         return order;
     }
 
+    public OrderDetailDTO mapToOrderDetailDTO(OrderDetail orderDetail) {
+        return modelMapper.map(orderDetail, OrderDetailDTO.class);
+    }
+
+    public OrderDetail mapToOrderDetail(OrderDetailDTO orderDetailDTO) {
+        return modelMapper.map(orderDetailDTO, OrderDetail.class);
+    }
+
     public void updateFromDto(OrderDTO orderDTO, Order order) {
         modelMapper.map(orderDTO, order);
-        // Handle nested mapping for orderDetails
         order.getOrderDetail().clear();
         List<OrderDetail> orderDetails = orderDTO.getOrderDetails().stream()
-                .map(detailDTO -> modelMapper.map(detailDTO, OrderDetail.class))
-                .collect(Collectors.toList());
+                .map(detailDTO -> {
+                    OrderDetail detail = modelMapper.map(detailDTO, OrderDetail.class);
+                    Product product = productService.getProductById(detailDTO.getProductId());
+                    detail.setTotalPrice(product.getPrice() * detailDTO.getQuantity());
+                    detail.setOrder(order); // Set the order in order detail
+                    return detail;
+                })
+                .toList();
         order.getOrderDetail().addAll(orderDetails);
     }
 }

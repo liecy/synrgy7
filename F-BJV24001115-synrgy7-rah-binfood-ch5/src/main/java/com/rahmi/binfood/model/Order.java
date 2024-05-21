@@ -19,9 +19,9 @@ public class Order extends BaseModel{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "order_time")
-    private Date time;
+//    @Temporal(TemporalType.TIMESTAMP)
+//    @Column(name = "order_time")
+//    private Date time;
 
     @Column(name = "destination_address")
     private String destinationAddress;

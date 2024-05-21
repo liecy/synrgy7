@@ -50,12 +50,6 @@ public class ProductServiceImpl implements ProductService {
         productRepository.deleteById(id);
     }
 
-//    @Override
-//    public Page<ProductDTO> getAllProducts(Pageable pageable) {
-//        Page<Product> products = productRepository.findAll(pageable);
-//        return products.map(productMapper::toDTO);
-//    }
-
     @Override
     public List<ProductDTO> getAllProducts() {
         List<Product> products = productRepository.findAll();
@@ -63,11 +57,18 @@ public class ProductServiceImpl implements ProductService {
                 .map(productMapper::toDTO)
                 .collect(Collectors.toList());
     }
+
     @Override
     public List<ProductDTO> findProductsByPriceGreaterThan(Double minPrice) {
         List<Product> products = productRepository.findProductsByPriceGreaterThan(minPrice);
         return products.stream()
                 .map(productMapper::toDTO)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public Product getProductById(UUID productId) { // Implement this method
+        return productRepository.findById(productId)
+                .orElseThrow(() -> new ProductNotFoundException("Product not found with id: " + productId));
     }
 }

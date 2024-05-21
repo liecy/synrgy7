@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class OrderDTO {
     private UUID id;
-    private Date time;
+    private Date createdDate;
     private String destinationAddress;
     private UUID userId;
     private Boolean completed;
