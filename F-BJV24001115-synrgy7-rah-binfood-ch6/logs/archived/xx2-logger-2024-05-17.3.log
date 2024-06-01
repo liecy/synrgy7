@@ -1,0 +1,4 @@
+2024-05-17 20:17:52,924 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-9] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Shojin': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-05-17 22:32:08,332 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-17 22:32:08,385 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-17 22:32:08,396 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
