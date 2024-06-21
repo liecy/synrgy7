@@ -29,7 +29,9 @@ public class InvoiceController {
                     .header("Content-Disposition", "inline; filename=invoice.pdf")
                     .body(pdf);
         } catch (JRException e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .header("Content-Type", "application/json")
+                    .body(("{\"message\": \"Failed to generate invoice: " + e.getMessage() + "\"}").getBytes());
         }
     }
 }
