@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
 @RequestMapping("/api/admin")
+@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for this controller
 public class AdminController {
 
     @Autowired
@@ -26,7 +29,7 @@ public class AdminController {
     @PostMapping("/assign-role")
     public ResponseEntity<?> assignRole(@RequestParam String username, @RequestParam ERole roleName) {
         Optional<User> userOptional = userRepository.findByUsername(username);
-        if (!userOptional.isPresent()) {
+        if (userOptional.isEmpty()) {
             return ResponseEntity.badRequest().body("User not found");
         }
 

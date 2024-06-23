@@ -1,8 +1,4 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/binfudexercise
-    username: postgres
-    password: 90opklnm
   security:
     oauth2:
       client:
