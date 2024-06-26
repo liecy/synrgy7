@@ -1,0 +1,125 @@
+2024-05-21 18:00:15,046 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 18:00:15,052 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-21 18:00:15,060 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-21 18:00:18,713 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 97236 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5)
+2024-05-21 18:00:18,715 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 18:00:19,372 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 18:00:19,422 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46 ms. Found 5 JPA repository interfaces.
+2024-05-21 18:00:19,879 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-21 18:00:19,887 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 18:00:19,888 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-21 18:00:19,889 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 18:00:19,939 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-21 18:00:19,940 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1186 ms
+2024-05-21 18:00:20,062 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 18:00:20,105 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-21 18:00:20,138 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-21 18:00:20,299 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 18:00:20,318 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-21 18:00:20,462 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18989e0
+2024-05-21 18:00:20,463 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-21 18:00:20,487 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 18:00:21,206 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 18:00:21,306 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 18:00:21,633 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-21 18:00:21,780 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 18:00:22,143 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 18:00:22,160 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 18:00:22,167 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 3.838 seconds (process running for 4.154)
+2024-05-21 18:00:29,442 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-21 18:00:29,442 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-21 18:00:29,443 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2024-05-21 18:00:30,158 ERROR o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Failed to generate invoice] with root cause
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+1. user cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).user.username; //$JR_EXPR_ID=8$
+                                                                                     <-->
+2. createdDate cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).createdDate; //$JR_EXPR_ID=9$
+                                                                                     <--------->
+3. The method SUM(Integer) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Integer)field_quantity.getValue())); //$JR_EXPR_ID=14$
+                        <->
+4. The method SUM(Double) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Double)field_totalPrice.getValue())); //$JR_EXPR_ID=15$
+                        <->
+5. user cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).user.username; //$JR_EXPR_ID=8$
+                                                                                     <-->
+6. createdDate cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).createdDate; //$JR_EXPR_ID=9$
+                                                                                     <--------->
+7. The method SUM(Integer) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Integer)field_quantity.getOldValue())); //$JR_EXPR_ID=14$
+                        <->
+8. The method SUM(Double) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Double)field_totalPrice.getOldValue())); //$JR_EXPR_ID=15$
+                        <->
+9. user cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).user.username; //$JR_EXPR_ID=8$
+                                                                                     <-->
+10. createdDate cannot be resolved or is not a field
+                value = ((com.rahmi.binfood.dto.OrderDTO)parameter_order.getValue()).createdDate; //$JR_EXPR_ID=9$
+                                                                                     <--------->
+11. The method SUM(Integer) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Integer)field_quantity.getValue())); //$JR_EXPR_ID=14$
+                        <->
+12. The method SUM(Double) is undefined for the type Invoice_1716289229929_132383
+                value = SUM(((java.lang.Double)field_totalPrice.getValue())); //$JR_EXPR_ID=15$
+                        <->
+12 errors
+.
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:233)
+	at net.sf.jasperreports.engine.JasperCompileManager.compile(JasperCompileManager.java:358)
+	at net.sf.jasperreports.engine.JasperCompileManager.compile(JasperCompileManager.java:344)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:609)
+	at com.rahmi.binfood.service.InvoiceFacadeImpl.generateInvoice(InvoiceFacadeImpl.java:58)
+	at com.rahmi.binfood.controller.InvoiceController.getOrderInvoice(InvoiceController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1589)

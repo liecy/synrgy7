@@ -1,0 +1,56 @@
+2024-05-05 21:00:32,541 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 19524 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4)
+2024-05-05 21:00:32,547 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-05 21:00:33,671 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-05 21:00:33,798 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 114 ms. Found 4 JPA repository interfaces.
+2024-05-05 21:00:34,839 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-05 21:00:34,854 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-05 21:00:34,856 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-05 21:00:34,857 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-05 21:00:34,936 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-05 21:00:34,937 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2323 ms
+2024-05-05 21:00:35,251 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-05 21:00:35,361 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-05 21:00:35,422 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-05 21:00:35,857 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-05 21:00:35,896 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-05 21:00:36,312 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72b40f87
+2024-05-05 21:00:36,315 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-05 21:00:36,403 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-05 21:00:37,955 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-05 21:00:38,134 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 21:00:38,777 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-05 21:00:38,868 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-05 21:00:39,456 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-05 21:00:39,487 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-05 21:00:39,503 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 7.764 seconds (process running for 9.002)
+2024-05-05 21:01:02,540 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 21:01:02,543 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-05 21:01:02,547 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-05 21:04:31,197 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 13404 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch4)
+2024-05-05 21:04:31,199 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-05 21:04:32,160 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-05 21:04:32,266 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 98 ms. Found 4 JPA repository interfaces.
+2024-05-05 21:04:33,009 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-05 21:04:33,021 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-05 21:04:33,024 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-05 21:04:33,024 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-05 21:04:33,090 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-05 21:04:33,092 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1835 ms
+2024-05-05 21:04:33,307 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-05 21:04:33,371 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-05 21:04:33,407 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-05 21:04:33,679 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-05 21:04:33,715 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-05 21:04:33,930 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66f2ec1c
+2024-05-05 21:04:33,933 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-05 21:04:33,973 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-05 21:04:35,268 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-05 21:04:35,412 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 21:04:35,874 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-05 21:04:35,948 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-05 21:04:36,333 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-05 21:04:36,355 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-05 21:04:36,369 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 5.888 seconds (process running for 6.505)
+2024-05-05 21:04:39,952 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 21:04:39,955 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-05 21:04:39,961 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

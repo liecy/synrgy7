@@ -1,0 +1,118 @@
+2024-05-21 17:42:05,396 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 17:42:05,401 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-21 17:42:05,410 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-21 17:42:07,255 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 98968 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5)
+2024-05-21 17:42:07,258 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 17:42:07,875 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 17:42:07,929 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2024-05-21 17:42:08,387 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-21 17:42:08,394 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 17:42:08,396 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-21 17:42:08,396 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 17:42:08,447 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-21 17:42:08,448 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1154 ms
+2024-05-21 17:42:08,564 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 17:42:08,607 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-21 17:42:08,636 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-21 17:42:08,786 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 17:42:08,806 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-21 17:42:08,953 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18989e0
+2024-05-21 17:42:08,954 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-21 17:42:08,981 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 17:42:09,652 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 17:42:09,724 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 17:42:09,994 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-21 17:42:10,133 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-21 17:42:10,496 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-05-21 17:42:10,511 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-05-21 17:42:10,521 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 3.67 seconds (process running for 4.151)
+2024-05-21 17:42:18,936 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-21 17:42:18,936 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-21 17:42:18,938 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2024-05-21 17:48:26,943 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 17:48:26,946 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-21 17:48:26,963 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-05-21 17:48:30,575 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 78904 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5)
+2024-05-21 17:48:30,578 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-21 17:48:31,273 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-21 17:48:31,326 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46 ms. Found 5 JPA repository interfaces.
+2024-05-21 17:48:31,768 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-05-21 17:48:31,775 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-21 17:48:31,776 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-21 17:48:31,777 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21 17:48:31,828 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-21 17:48:31,829 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1202 ms
+2024-05-21 17:48:31,953 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-21 17:48:31,994 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-21 17:48:32,030 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-05-21 17:48:32,190 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-21 17:48:32,219 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-21 17:48:32,363 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@285bf5ac
+2024-05-21 17:48:32,365 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-21 17:48:32,393 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-21 17:48:33,098 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-21 17:48:33,170 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 17:48:33,450 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-21 17:48:33,515 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController' defined in file [D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes\com\rahmi\binfood\controller\InvoiceController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'invoiceFacadeImpl' defined in file [D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes\com\rahmi\binfood\service\InvoiceFacadeImpl.class]: null
+2024-05-21 17:48:33,516 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-21 17:48:33,517 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-05-21 17:48:33,523 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-05-21 17:48:33,526 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-05-21 17:48:33,537 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-21 17:48:33,557 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController' defined in file [D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes\com\rahmi\binfood\controller\InvoiceController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'invoiceFacadeImpl' defined in file [D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes\com\rahmi\binfood\service\InvoiceFacadeImpl.class]: null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.rahmi.binfood.BinfoodApplication.main(BinfoodApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceFacadeImpl' defined in file [D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch5\target\classes\com\rahmi\binfood\service\InvoiceFacadeImpl.class]: null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:201)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:547)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:497)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:111)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	... 33 common frames omitted
+Caused by: java.lang.ClassCastException: class org.apache.logging.slf4j.SLF4JLogger cannot be cast to class org.slf4j.Logger (org.apache.logging.slf4j.SLF4JLogger and org.slf4j.Logger are in unnamed module of loader 'app')
+	at com.rahmi.binfood.service.InvoiceFacadeImpl.<clinit>(InvoiceFacadeImpl.java:29)
+	... 44 common frames omitted
