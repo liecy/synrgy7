@@ -2,12 +2,15 @@ package com.rahmi.binfood.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @AllArgsConstructor
-public class LoginRequestDTO {
+@NoArgsConstructor
+public class ResetPasswordRequestDTO {
     private String emailAddress;
-    private String password;
+    private String otp;
+    private String newPassword;
 }

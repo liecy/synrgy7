@@ -43,8 +43,9 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
         final String fullName;
 
         if (oAuth2User instanceof OidcUser) {
-            email = ((OidcUser) oAuth2User).getEmail();
-            fullName = ((OidcUser) oAuth2User).getFullName();
+            OidcUser oidcUser = (OidcUser) oAuth2User;
+            email = oidcUser.getEmail();
+            fullName = oidcUser.getFullName();
         } else if (oAuth2User instanceof DefaultOAuth2User) {
             email = oAuth2User.getAttribute("email");
             fullName = oAuth2User.getAttribute("name");
@@ -64,18 +65,23 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
                 .orElseGet(() -> {
                     Role userRole = roleRepository.findByName(ERole.ROLE_USER)
                             .orElseGet(() -> roleRepository.save(new Role(ERole.ROLE_USER)));
-
                     User newUser = User.builder()
                             .username(fullName)
                             .emailAddress(email)
                             .password("") // OAuth2 users might not have a password
                             .roles(Collections.singleton(userRole))
+                            .otpValidated(true) // Automatically validated for OAuth users
                             .build();
                     return userRepository.save(newUser);
                 });
 
-        UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUsername());
+        UserDetails userDetails = userDetailsService.loadUserByEmailAddress(user.getEmailAddress());
         String token = jwtTokenUtil.generateToken(userDetails);
-        response.sendRedirect("/api/auth/oauth2/success?token=" + token);
+
+        // Set the token as a request attribute
+        request.getSession().setAttribute("jwtToken", token);
+
+        // Redirect to success endpoint
+        response.sendRedirect("/api/auth/oauth2/success");
     }
 }

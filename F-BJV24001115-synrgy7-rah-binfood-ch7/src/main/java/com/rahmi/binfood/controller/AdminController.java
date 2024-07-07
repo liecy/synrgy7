@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "http://localhost:3000") // Enable CORS for this controller
+@CrossOrigin(origins = "http://localhost:3000")
 public class AdminController {
 
     @Autowired
@@ -43,3 +43,4 @@ public class AdminController {
         return ResponseEntity.ok("Role assigned successfully");
     }
 }
+

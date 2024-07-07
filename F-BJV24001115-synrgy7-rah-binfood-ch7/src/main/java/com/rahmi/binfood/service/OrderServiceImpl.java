@@ -6,6 +6,7 @@ import com.rahmi.binfood.exception.OrderNotFoundException;
 import com.rahmi.binfood.mapper.OrderMapper;
 import com.rahmi.binfood.model.Order;
 import com.rahmi.binfood.repository.OrderRepository;
+import com.rahmi.binfood.security.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,9 @@ public class OrderServiceImpl implements OrderService {
 
     private final OrderRepository orderRepository;
     private final OrderMapper orderMapper;
+
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
 
     @Autowired
     public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper, ProductService productService) {
@@ -65,5 +69,11 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderRepository.findById(orderId)
                 .orElseThrow(() -> new OrderNotFoundException("Order not found with id: " + orderId));
         orderRepository.delete(order);
+    }
+
+    @Override
+    public List<OrderDTO> getOrdersByCurrentUser(String token) {
+        UUID userId = jwtTokenUtil.extractUserId(token);
+        return getOrdersByUserId(userId);
     }
 }

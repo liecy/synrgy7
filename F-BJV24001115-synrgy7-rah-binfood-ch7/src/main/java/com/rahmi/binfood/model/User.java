@@ -26,7 +26,7 @@ public class User extends BaseModel {
 
     private String password;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Order> orders;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -34,4 +34,7 @@ public class User extends BaseModel {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
+
+    @Column(name = "otp_validated", nullable = false, columnDefinition = "boolean default false")
+    private boolean otpValidated;
 }

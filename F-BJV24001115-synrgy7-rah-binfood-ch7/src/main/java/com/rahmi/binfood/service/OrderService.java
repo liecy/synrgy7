@@ -13,4 +13,5 @@ public interface OrderService {
     OrderDTO getOrderById(UUID orderId);
     OrderDTO updateOrder(UUID orderId, OrderRequestDTO orderDTO);
     void deleteOrder(UUID orderId);
+    List<OrderDTO> getOrdersByCurrentUser(String token);
 }
