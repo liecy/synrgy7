@@ -5,169 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ecfd9c-b783-485e-a0c4-5a88dcf80e15" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/binarfud_rahmi.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-04.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-05.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-05.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-05.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-07.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-07.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-07.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-13.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-14.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-15.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-15.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-15.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-15.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-15.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-16.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-17.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-17.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-05-17.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-01.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-01.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-01.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-01.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-01.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-02.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-05.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/archived/xx2-logger-2024-07-07.9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/xx2-logger.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/BinfoodApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/InvoiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/MerchantController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/OrderDetailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/ForgetPasswordRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/JwtResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/LoginRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/MerchantRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/MerchantResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/OrderDetailDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/OrderRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/ProductRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/ProductResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/ProductUpdateRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/RegisterRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/ResetPasswordRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/UserRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/dto/VerifyOtpRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/EmailSendingException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/MerchantNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/OrderDetailNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/OrderNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/ProductNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/exception/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/mapper/MerchantMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/mapper/OrderDetailMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/mapper/OrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/mapper/ProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/BaseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/ERole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/Merchant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/OrderDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/MerchantRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/OrderDetailRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/OrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/security/JwtAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/security/JwtRequestFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/security/JwtTokenUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/security/OAuth2AuthenticationSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/security/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/EmailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/EmailServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/InvoiceFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/InvoiceFacadeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/MerchantService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/MerchantServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OrderDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OrderDetailServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OtpService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/OtpServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rahmi/binfood/util/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/rahmi/binfood/BinfoodApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binfood/logs/xx2-logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/binfood/logs/xx2-logger.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +68,7 @@
     "Spring Boot.BinfoodApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/nisa/Synrgy Academy 2024/synrgy7/F-BJV24001115-synrgy7-rah-binfood-ch7/binfood",
+    "last_opened_file_path": "D:/nisa/Synrgy Academy 2024/synrgy7/F-BJV24001115-synrgy7-rah-binfood-ch7/eureka-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -278,6 +117,9 @@
       <workItem from="1720170325784" duration="5491000" />
       <workItem from="1720284822677" duration="9109000" />
       <workItem from="1720403050032" duration="4276000" />
+      <workItem from="1720421157816" duration="25000" />
+      <workItem from="1720421193047" duration="18000" />
+      <workItem from="1720682806824" duration="50000" />
     </task>
     <servers />
   </component>
