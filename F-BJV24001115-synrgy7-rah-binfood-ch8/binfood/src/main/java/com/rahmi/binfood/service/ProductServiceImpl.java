@@ -95,4 +95,9 @@ public class ProductServiceImpl implements ProductService {
     public Product convertToProduct(ProductResponseDTO productResponseDTO) {
         return modelMapper.map(productResponseDTO, Product.class);
     }
+
+    @Override
+    public List<Product> getAll() {
+        return productRepository.findAll();
+    }
 }

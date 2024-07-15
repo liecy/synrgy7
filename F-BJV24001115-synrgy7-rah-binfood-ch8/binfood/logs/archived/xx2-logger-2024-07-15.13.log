@@ -1,0 +1,404 @@
+2024-07-15 15:21:07,231 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-07-15 15:21:07,264 INFO o.s.b.StartupInfoLogger [main] Starting BinfoodApplication using Java 19.0.2 with PID 55056 (D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch8\binfood\target\classes started by user in D:\nisa\Synrgy Academy 2024\synrgy7\F-BJV24001115-synrgy7-rah-binfood-ch8\binfood)
+2024-07-15 15:21:07,266 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-07-15 15:21:08,214 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-15 15:21:08,342 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 124 ms. Found 6 JPA repository interfaces.
+2024-07-15 15:21:08,522 INFO o.s.c.l.LogAccessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-07-15 15:21:08,529 INFO o.s.c.l.LogAccessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-07-15 15:21:08,787 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [integrationMbeanExporter] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-07-15 15:21:08,793 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,794 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$801/0x000000080152b2c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,795 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,804 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,808 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,816 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:08,819 WARN o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-07-15 15:21:09,055 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8081 (http)
+2024-07-15 15:21:09,067 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2024-07-15 15:21:09,069 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-07-15 15:21:09,069 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-15 15:21:09,148 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-07-15 15:21:09,149 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1843 ms
+2024-07-15 15:21:09,272 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-15 15:21:09,381 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-15 15:21:09,428 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-07-15 15:21:09,649 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-15 15:21:09,678 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-07-15 15:21:09,830 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9825465
+2024-07-15 15:21:09,832 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-07-15 15:21:09,872 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-15 15:21:11,042 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-15 15:21:11,173 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-15 15:21:11,624 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-15 15:21:11,757 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-15 15:21:12,137 INFO c.r.b.n.FirebaseConfig [main] Firebase application has been initialized
+2024-07-15 15:21:12,278 INFO o.q.i.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2024-07-15 15:21:12,287 INFO o.q.c.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-15 15:21:12,288 INFO o.q.c.QuartzScheduler [main] Quartz Scheduler v.2.3.2 created.
+2024-07-15 15:21:12,288 INFO o.q.s.RAMJobStore [main] RAMJobStore initialized.
+2024-07-15 15:21:12,289 INFO o.q.c.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-15 15:21:12,289 INFO o.q.i.StdSchedulerFactory [main] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+2024-07-15 15:21:12,289 INFO o.q.i.StdSchedulerFactory [main] Quartz scheduler version: 2.3.2
+2024-07-15 15:21:12,290 INFO o.q.c.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3c9163df
+2024-07-15 15:21:12,530 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@116e03e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4837c56d, org.springframework.security.web.context.SecurityContextHolderFilter@3108d1e1, org.springframework.security.web.header.HeaderWriterFilter@2ec3c213, org.springframework.web.filter.CorsFilter@4e7fbd6c, org.springframework.security.web.authentication.logout.LogoutFilter@353ab9e5, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@31dd8a0b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@60e72ced, com.rahmi.binfood.security.JwtRequestFilter@6860c000, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bd8d8a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75862489, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@721fbae2, org.springframework.security.web.session.SessionManagementFilter@4d94b0af, org.springframework.security.web.access.ExceptionTranslationFilter@1925be93, org.springframework.security.web.access.intercept.AuthorizationFilter@5bdde886]
+2024-07-15 15:21:13,273 INFO o.s.i.m.IntegrationMBeanExporter [main] Registering MessageChannel errorChannel
+2024-07-15 15:21:13,280 INFO o.s.i.m.IntegrationMBeanExporter [main] Registering MessageChannel nullChannel
+2024-07-15 15:21:13,288 INFO o.s.i.m.IntegrationMBeanExporter [main] Registering MessageHandler _org.springframework.integration.errorLogger
+2024-07-15 15:21:13,321 INFO o.a.k.c.c.AbstractConfig [main] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-07-15 15:21:13,426 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.6.2
+2024-07-15 15:21:13,427 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: c4deed513057c94e
+2024-07-15 15:21:13,427 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1721031673423
+2024-07-15 15:21:13,445 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:13,448 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:13,562 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:13,562 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:13,671 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:13,672 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:13,996 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:13,997 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:14,540 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:14,541 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:15,408 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:15,408 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:16,489 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:16,490 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:17,681 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:17,682 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:18,551 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:18,552 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:19,633 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:19,633 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:20,827 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:20,827 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:21,911 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:21,912 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:22,781 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:22,781 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:23,976 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:23,977 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:24,845 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:24,846 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:25,825 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:25,826 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:26,801 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:26,801 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:27,884 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:27,885 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:28,968 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:28,968 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:30,053 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:30,054 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:31,031 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:31,031 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:31,898 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:31,898 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:32,983 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:32,984 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:34,067 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:34,067 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:35,153 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:35,153 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:36,133 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:36,133 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:37,324 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:37,325 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:38,409 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:38,409 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:39,495 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:39,495 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:40,469 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:40,470 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:41,332 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:41,333 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:42,307 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:42,309 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:43,439 INFO o.a.k.c.a.i.AdminMetadataManager [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+2024-07-15 15:21:43,439 ERROR o.s.c.l.LogAccessor [main] Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$11(KafkaAdmin.java:520)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:499)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:392)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:258)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:986)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.rahmi.binfood.BinfoodApplication.main(BinfoodApplication.java:14)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$11(KafkaAdmin.java:502)
+	... 15 common frames omitted
+2024-07-15 15:21:43,548 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:43,548 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:44,632 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:44,633 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:45,829 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:45,829 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:46,697 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:46,697 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:47,566 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:47,566 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:48,467 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:48,470 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:49,576 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:49,577 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:50,459 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:50,460 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:51,328 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:51,329 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:52,413 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:52,413 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:53,386 INFO o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Node -1 disconnected.
+2024-07-15 15:21:53,387 WARN o.a.k.c.NetworkClient [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:53,447 INFO o.a.k.c.a.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2024-07-15 15:21:53,448 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | adminclient-1] App info kafka.admin.client for adminclient-1 unregistered
+2024-07-15 15:21:53,450 INFO o.a.k.c.a.i.AdminMetadataManager [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2024-07-15 15:21:53,450 INFO o.a.k.c.a.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-1] [AdminClient clientId=adminclient-1] Timed out 2 remaining operation(s) during close.
+2024-07-15 15:21:53,458 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics scheduler closed
+2024-07-15 15:21:53,459 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-07-15 15:21:53,460 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | adminclient-1] Metrics reporters closed
+2024-07-15 15:21:53,470 INFO o.s.c.l.LogAccessor [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-07-15 15:21:53,471 INFO o.s.c.l.LogAccessor [main] Channel 'binfood.errorChannel' has 1 subscriber(s).
+2024-07-15 15:21:53,471 INFO o.s.c.l.LogAccessor [main] started bean '_org.springframework.integration.errorLogger'
+2024-07-15 15:21:53,472 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2024-07-15 15:21:53,490 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8081 (http) with context path ''
+2024-07-15 15:21:53,531 INFO o.a.k.c.c.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-07-15 15:21:53,641 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.6.2
+2024-07-15 15:21:53,641 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: c4deed513057c94e
+2024-07-15 15:21:53,641 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1721031713640
+2024-07-15 15:21:53,644 INFO o.a.k.c.c.KafkaConsumer [main] [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): binfood_topic
+2024-07-15 15:21:53,656 INFO o.s.s.q.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2024-07-15 15:21:53,657 INFO o.q.c.QuartzScheduler [main] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+2024-07-15 15:21:53,685 INFO o.s.b.StartupInfoLogger [main] Started BinfoodApplication in 46.965 seconds (process running for 47.833)
+2024-07-15 15:21:54,149 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:54,149 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:54,150 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:54,259 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:54,260 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:54,260 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:54,365 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:54,366 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:54,366 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:54,596 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:54,597 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:54,597 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:55,077 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:55,077 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:55,078 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:55,990 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:55,990 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:55,990 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:56,905 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:56,906 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:56,906 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:57,940 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:57,941 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:57,941 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:21:58,850 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:21:58,850 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:21:58,850 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:00,073 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:00,073 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:00,074 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:01,112 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:01,113 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:01,113 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:01,963 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:01,963 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:01,963 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:02,937 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:02,937 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:02,937 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:03,928 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:03,928 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:03,929 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:04,905 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:04,905 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:04,906 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:05,759 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:05,759 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:05,759 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-15 15:22:06,855 INFO o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2024-07-15 15:22:06,856 WARN o.a.k.c.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2024-07-15 15:22:06,856 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-1, groupId=group_id] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected

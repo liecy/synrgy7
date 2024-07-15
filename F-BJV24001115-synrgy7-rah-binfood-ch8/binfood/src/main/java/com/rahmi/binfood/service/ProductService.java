@@ -15,7 +15,7 @@ public interface ProductService {
     List<ProductResponseDTO> getAllProducts();
     List<ProductResponseDTO> findProductsByPriceGreaterThan(Double minPrice);
     List<ProductResponseDTO> getProductsByMerchant(UUID merchantId);
-
+    List<Product> getAll();
     Product getProductById(UUID productId);
     ProductResponseDTO getProductResponseDTOById(UUID productId);
     Product convertToProduct(ProductResponseDTO productResponseDTO);
