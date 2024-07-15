@@ -30,6 +30,7 @@ public class OrderMapper {
                 .map(detail -> {
                     OrderDetailDTO detailDTO = modelMapper.map(detail, OrderDetailDTO.class);
                     detailDTO.setOrderId(order.getId());
+                    detailDTO.setProductId(detail.getProductId()); // Set product ID
                     return detailDTO;
                 })
                 .collect(Collectors.toList());

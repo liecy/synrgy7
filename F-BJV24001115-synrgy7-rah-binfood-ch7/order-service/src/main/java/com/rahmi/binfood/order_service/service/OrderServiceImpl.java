@@ -1,13 +1,16 @@
 package com.rahmi.binfood.order_service.service;
 
+import com.rahmi.binfood.order_service.client.ProductClient;
 import com.rahmi.binfood.order_service.dto.OrderDTO;
 import com.rahmi.binfood.order_service.dto.OrderRequestDTO;
+import com.rahmi.binfood.order_service.dto.ProductQuantityUpdateDTO;
 import com.rahmi.binfood.order_service.exception.OrderNotFoundException;
 import com.rahmi.binfood.order_service.mapper.OrderMapper;
 import com.rahmi.binfood.order_service.model.Order;
 import com.rahmi.binfood.order_service.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.UUID;
@@ -18,17 +21,27 @@ public class OrderServiceImpl implements OrderService {
 
     private final OrderRepository orderRepository;
     private final OrderMapper orderMapper;
+    private final ProductClient productClient;
 
     @Autowired
-    public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper) {
+    public OrderServiceImpl(OrderRepository orderRepository, OrderMapper orderMapper, ProductClient productClient) {
         this.orderRepository = orderRepository;
         this.orderMapper = orderMapper;
+        this.productClient = productClient;
     }
 
     @Override
+    @Transactional
     public OrderDTO createOrder(OrderDTO orderDTO) {
         Order order = orderMapper.toEntity(orderDTO);
         Order savedOrder = orderRepository.save(order);
+
+        // Update product quantities
+        order.getOrderDetail().forEach(orderDetail -> {
+            ProductQuantityUpdateDTO productQuantityUpdateDTO = new ProductQuantityUpdateDTO(orderDetail.getProductId(), orderDetail.getQuantity());
+            productClient.updateProductQuantity(productQuantityUpdateDTO);
+        });
+
         return orderMapper.toDto(savedOrder);
     }
 

@@ -12,22 +12,5 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "order_detail")
-public class OrderDetail extends BaseModel{
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+public class OrderDetail extends BaseModel {
 
-    @ManyToOne(targetEntity = Order.class)
-    @JoinColumn(name = "id_order")
-    private Order order;
-
-    private Integer quantity;
-
-    @Column(name = "total_price")
-    private Double totalPrice;
-
-    // Hapus relasi ke Product jika tidak diperlukan
-    // @ManyToOne(targetEntity = Product.class)
-    // @JoinColumn(name = "id_product")
-    // private Product product;
-}
